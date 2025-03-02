@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn-link {
+    @apply rounded-xl px-3 py-1 bg-cyan-500 hover:bg-cyan-700 text-white m-3;
+  }
+}
