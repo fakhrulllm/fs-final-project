@@ -24,7 +24,44 @@ const Job = () => {
     getJobs();
   }, []);
 
- 
+  return (
+    <div className="max-w-5xl mx-auto bg-white p-5 shadow-lg rounded-lg">
+      <div className="flex justify-between mb-4">
+        <button className="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">
+          Create Job
+        </button>
+        <button className="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">
+          Detail Job
+        </button>
+      </div>
+      <table className="w-full border-collapse bg-white text-left shadow-md rounded-lg">
+        <thead>
+          <tr className="bg-green-500 text-white">
+            <th className="p-3">ID</th>
+            <th className="p-3">Name</th>
+            <th className="p-3">Category</th>
+            <th className="p-3">Max Salary</th>
+            <th className="p-3">Min Salary</th>
+            <th className="p-3">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {jobs.map((job) => (
+            <tr key={job.id} className="border-b hover:bg-gray-100">
+              <td className="p-3">{job.id}</td>
+              <td className="p-3">{job.name}</td>
+              <td className="p-3">{job.category}</td>
+              <td className="p-3">{job.max_salary}</td>
+              <td className="p-3">{job.min_salary}</td>
+              <td className="p-3">
+                <button className="text-blue-500 hover:underline">Edit</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 };
 
 export default Job;
