@@ -27,12 +27,7 @@ const Employer = () => {
   return (
     <div className="max-w-5xl mx-auto bg-white p-5 shadow-lg rounded-lg">
       <div className="flex justify-between mb-4">
-        <button className="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">
-          Create Employer
-        </button>
-        <button className="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">
-          Detail Employer
-        </button>
+        <button className="bg-black "> </button>
       </div>
       <table className="w-full border-collapse bg-white text-left shadow-md rounded-lg">
         <thead>

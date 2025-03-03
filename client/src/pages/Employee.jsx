@@ -27,12 +27,12 @@ const Employee = () => {
   return (
     <div className="max-w-5xl mx-auto bg-white p-5 shadow-lg rounded-lg">
       <div className="flex justify-between mb-4">
-        <button className="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">
-          Create Employee
-        </button>
-        <button className="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">
-          Detail Employee
-        </button>
+      <Link className="btn-link" to="/employees/create">
+        Create Employee
+      </Link>
+      <Link className="btn-link" to="/employees/detail/1">
+        Detail Employer
+      </Link>
       </div>
       <table className="w-full border-collapse bg-white text-left shadow-md rounded-lg">
         <thead>
